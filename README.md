@@ -22,3 +22,11 @@ This program uses Java 22 bc i'm weird like that
 #### [Here's a handy link](https://adoptium.net/temurin/releases/?version=22)
 
 (it's for Temurin bc nobody likes oracle)
+
+## Historical Changelog
+
+### 1.0.1
+- fixed auto-update not working
+
+### 1.0.0
+- made the thing
