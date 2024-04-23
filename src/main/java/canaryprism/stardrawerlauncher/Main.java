@@ -127,8 +127,22 @@ public class Main {
                     info("Future versions of StarDrawer are incompatible with this version of StarDrawerLauncher, please update StarDrawerLauncher");
                 }
                 if (latest_version.compareTo(version) > 0) {
-                    info("New version of StarDrawer available, downloading now...");
+                    var frame = new JFrame("StarDrawerLauncher - AutoUpdater");
+                    frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+
+                    var label = new JLabel("""
+                            <html>
+                            <p>New version of StarDrawer found, downloading now...</p>
+                            </html>
+                            """);
+                    label.setBorder(new EmptyBorder(10, 10, 10, 10));
+                    frame.getContentPane().add(label);
+
+                    frame.pack();
+                    frame.setResizable(false);
+                    frame.setVisible(true);
                     download(installs_folder.getAbsolutePath(), jar_asset);
+                    frame.dispose();
                 }
 
             } catch (IOException e) {
