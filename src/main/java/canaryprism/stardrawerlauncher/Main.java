@@ -121,7 +121,8 @@ public class Main {
                 var matcher2 = pattern.matcher(jar_asset.getName());
                 matcher2.matches();
 
-                var latest_version = new Version(matcher.group(1));
+                var latest_version = new Version(matcher2.group(1));
+
                 if (version.major != major) {
                     info("Future versions of StarDrawer are incompatible with this version of StarDrawerLauncher, please update StarDrawerLauncher");
                 }
