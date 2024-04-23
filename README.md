@@ -25,6 +25,9 @@ This program uses Java 22 bc i'm weird like that
 
 ## Historical Changelog
 
+### 1.1.0
+- made auto-updates work nicer (you no longer have to dismiss the new update found message to begin updating)
+
 ### 1.0.1
 - fixed auto-update not working
 
