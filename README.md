@@ -34,6 +34,9 @@ This program uses Java 22 bc i'm weird like that
 
 ## Historical Changelog
 
+### 1.1.2
+- fixed the big problem where the thing just wouldn't work if u didn't have the save folder (sorry)
+
 ### 1.1.1
 - made them work nicer again
 
