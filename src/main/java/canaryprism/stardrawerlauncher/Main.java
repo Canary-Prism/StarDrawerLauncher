@@ -146,7 +146,7 @@ public class Main {
                 }
 
             } catch (IOException e) {
-                info("Autoupdater failed to find StarDrawer, make sure you are connected to the internet: " + e.getMessage());
+                info("AutoUpdater failed to find StarDrawer, make sure you are connected to the internet: " + e.getMessage());
             }
         }, "AutoUpdater").start();
 
