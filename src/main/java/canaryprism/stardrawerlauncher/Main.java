@@ -132,7 +132,7 @@ public class Main {
 
                     var label = new JLabel("""
                             <html>
-                            <p>New version of StarDrawer found, downloading now...</p>
+                            <h2>New version of StarDrawer found, downloading now...</h2>
                             </html>
                             """);
                     label.setBorder(new EmptyBorder(10, 10, 10, 10));
@@ -141,6 +141,7 @@ public class Main {
                     frame.pack();
                     frame.setResizable(false);
                     frame.setVisible(true);
+                    frame.setAlwaysOnTop(true);
                     download(installs_folder.getAbsolutePath(), jar_asset);
                     frame.dispose();
                 }
