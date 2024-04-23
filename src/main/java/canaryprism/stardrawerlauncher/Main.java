@@ -238,7 +238,7 @@ public class Main {
     }
 
     private static boolean hasUsableInstalls(File installs_folder) {
-        return installs_folder.listFiles((e) -> e.getName().matches("StarDrawer-" + major + "\\..*\\.jar")).length > 0;
+        return installs_folder.exists() && installs_folder.listFiles((e) -> e.getName().matches("StarDrawer-" + major + "\\..*\\.jar")).length > 0;
     }
 
     static class SaveData {
