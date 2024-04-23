@@ -4,6 +4,15 @@ hehe this thing is so ugly and overengineered
 
 this thing launches and auto-updates [StarDrawer](https://github.com/Canary-Prism/StarDrawer) (my other thing)
 
+it downloads the latest release of StarDrawer on first launch  
+each time it launches after that it checks github for the latest release  
+and if there's a new one it downloads it 
+
+NOTE: you must close and reopen the launcher to use newly downloaded versions as it checks for new versions after launching the current one  
+this is done to minimise waiting time
+
+it also saves window position and star sides when you close StarDrawer and restores it on next launch
+
 ### [Download](https://github.com/Canary-Prism/StarDrawerLauncher/releases/)
 
 I'm assuming you know how to use GitHub. If not then here:
